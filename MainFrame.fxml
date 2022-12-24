@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainFrame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #051629;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="thesnake.MainFrameController">
+   <children>
+      <ImageView fx:id="MainImage" fitHeight="334.0" fitWidth="400.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@SnakeWelcome.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="RegButton" layoutX="121.0" layoutY="360.0" mnemonicParsing="false" onAction="#RegButtonListener" prefHeight="46.0" prefWidth="158.0" style="-fx-background-color: #ea77ac;" text="Regular Mode" textFill="WHITE">
+         <font>
+            <Font name="Calibri" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="AStarButton" layoutX="121.0" layoutY="462.0" mnemonicParsing="false" onAction="#AStarButtonListener" prefHeight="46.0" prefWidth="158.0" style="-fx-background-color: #ea77ac;" text="A* Mode" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
